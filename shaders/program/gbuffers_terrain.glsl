@@ -450,7 +450,7 @@ void main() {
     }
 
     if (mat == 0 && at_midBlock.w > 0.3) {
-        mat = 10028;
+        mat = 0; // Changed from 10028, as it caused a lot of modded blocks to be treated as emissives, specifically when simulated with Sable, such as with the Create Aeronautics mod.
     }
 
     #if ANISOTROPIC_FILTER > 0
